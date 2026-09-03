@@ -1301,8 +1301,7 @@
     let isAdmin = false;
     function checkAdminMode() {
         const bodyText = document.body.textContent || document.body.innerText;
-        isAdmin = bodyText.includes(t('plugin.rdsAiDecoderPlugin.loggedInAsAdministrator')) ||
-                  bodyText.includes(t('plugin.rdsAiDecoderPlugin.loggedInAsAdminstrator'));
+        isAdmin = bodyText.includes(t('plugin.rdsAiDecoderPlugin.loggedInAsAdministrator'));
     }
     checkAdminMode();
 
